@@ -16,7 +16,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ name, tagline, profileIma
         <img 
           src={profileImageUrl} 
           alt={`${name}'s profile`} 
-          className="relative w-32 h-32 rounded-full object-cover border-4 border-white shadow-glow"
+          className="relative w-32 h-32 rounded-full object-cover border-4 border-model-purple/30 shadow-glow"
         />
       </div>
       
@@ -24,15 +24,15 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ name, tagline, profileIma
         {name}
       </h1>
       
-      <p className="text-muted-foreground text-center mb-4 max-w-xs">
+      <p className="text-gray-300 text-center mb-4 max-w-xs">
         {tagline}
       </p>
       
       <div className="flex gap-2 mb-4">
-        <Badge variant="secondary" className="bg-model-lightpurple text-model-purple">
+        <Badge variant="secondary" className="bg-model-purple/20 text-model-pink border border-model-purple/30">
           Model
         </Badge>
-        <Badge variant="secondary" className="bg-model-lightpurple text-model-purple">
+        <Badge variant="secondary" className="bg-model-purple/20 text-model-pink border border-model-purple/30">
           Content Creator
         </Badge>
       </div>

@@ -68,6 +68,7 @@ export default {
 					lightpurple: "#E5DEFF",
 					pink: "#D946EF",
 					blue: "#0EA5E9",
+					dark: "#1A1F2C"
 				}
 			},
 			fontFamily: {

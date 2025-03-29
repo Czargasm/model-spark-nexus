@@ -17,12 +17,12 @@ const PromoBanner: React.FC<PromoBannerProps> = ({
   ctaLink 
 }) => {
   return (
-    <div className="rounded-xl p-6 mb-8 bg-gradient-to-br from-model-lightpurple to-white shadow-glow">
-      <h3 className="text-xl font-bold text-model-purple mb-2 flex items-center">
+    <div className="rounded-xl p-6 mb-8 bg-gradient-to-br from-model-purple/20 to-model-dark border border-model-purple/30 shadow-glow">
+      <h3 className="text-xl font-bold text-model-pink mb-2 flex items-center">
         <Sparkles className="h-5 w-5 mr-2" />
         {title}
       </h3>
-      <p className="text-sm text-muted-foreground mb-4">{description}</p>
+      <p className="text-sm text-gray-300 mb-4">{description}</p>
       <Button 
         asChild
         className="w-full bg-gradient-purple hover:opacity-90 transition-opacity"

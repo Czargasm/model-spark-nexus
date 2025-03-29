@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Badge } from '@/components/ui/badge';
 
 interface ProfileHeaderProps {
   name: string;
@@ -27,15 +26,6 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ name, tagline, profileIma
       <p className="text-gray-300 text-center mb-4 max-w-xs">
         {tagline}
       </p>
-      
-      <div className="flex gap-2 mb-4">
-        <Badge variant="secondary" className="bg-model-purple/20 text-model-pink border border-model-purple/30">
-          Model
-        </Badge>
-        <Badge variant="secondary" className="bg-model-purple/20 text-model-pink border border-model-purple/30">
-          Content Creator
-        </Badge>
-      </div>
     </div>
   );
 };

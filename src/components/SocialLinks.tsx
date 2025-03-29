@@ -3,12 +3,10 @@ import React from 'react';
 import { 
   Instagram, 
   Twitter, 
-  Twitch, 
-  Youtube, 
-  Facebook, 
   Heart,
   MessageCircle,
-  Music
+  Music,
+  ShoppingCart
 } from 'lucide-react';
 
 interface SocialLink {
@@ -27,6 +25,11 @@ const SocialLinks: React.FC = () => {
       primary: true
     },
     {
+      name: "MyFreeCams",
+      url: "https://myfreecams.com/username",
+      icon: <MessageCircle className="social-icon" />,
+    },
+    {
       name: "Instagram",
       url: "https://instagram.com/username",
       icon: <Instagram className="social-icon" />,
@@ -42,24 +45,9 @@ const SocialLinks: React.FC = () => {
       icon: <Music className="social-icon" />,
     },
     {
-      name: "MyFreeCams",
-      url: "https://myfreecams.com/username",
-      icon: <MessageCircle className="social-icon" />,
-    },
-    {
-      name: "Twitch",
-      url: "https://twitch.tv/username",
-      icon: <Twitch className="social-icon" />,
-    },
-    {
-      name: "YouTube",
-      url: "https://youtube.com/channel/username",
-      icon: <Youtube className="social-icon" />,
-    },
-    {
-      name: "Facebook",
-      url: "https://facebook.com/username",
-      icon: <Facebook className="social-icon" />,
+      name: "Amazon Wishlist",
+      url: "https://www.amazon.com/hz/wishlist/ls/username",
+      icon: <ShoppingCart className="social-icon" />,
     }
   ];
 

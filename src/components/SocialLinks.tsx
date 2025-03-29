@@ -75,10 +75,13 @@ const SocialLinks: React.FC = () => {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="social-link bg-gradient-purple animate-float scale-105"
+          className="social-link primary-link group relative overflow-hidden"
         >
-          {link.icon}
-          {link.name}
+          <span className="absolute inset-0 bg-gradient-to-r from-model-purple to-model-pink opacity-80 group-hover:opacity-100 transition-opacity duration-300"></span>
+          <span className="relative flex items-center justify-center">
+            <span className="mr-3 transform group-hover:scale-110 transition-transform duration-300">{link.icon}</span>
+            <span className="font-semibold text-lg">{link.name}</span>
+          </span>
         </a>
       ))}
       
@@ -88,10 +91,13 @@ const SocialLinks: React.FC = () => {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="social-link bg-white/90 text-model-purple hover:bg-model-lightpurple"
+          className="social-link regular-link group relative overflow-hidden"
         >
-          {link.icon}
-          {link.name}
+          <span className="absolute inset-0 bg-gradient-to-r from-gray-800 to-model-dark opacity-70 border border-model-purple/20 group-hover:bg-model-purple/30 transition-all duration-300"></span>
+          <span className="relative flex items-center justify-center">
+            <span className="text-model-purple mr-3 transform group-hover:scale-110 transition-transform duration-300">{link.icon}</span>
+            <span className="font-medium text-white">{link.name}</span>
+          </span>
         </a>
       ))}
     </div>

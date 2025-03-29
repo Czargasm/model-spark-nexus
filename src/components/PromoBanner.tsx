@@ -25,14 +25,16 @@ const PromoBanner: React.FC<PromoBannerProps> = ({
       <p className="text-sm text-gray-300 mb-4">{description}</p>
       <Button 
         asChild
-        className="w-full bg-gradient-purple hover:opacity-90 transition-opacity"
+        className="w-full bg-gradient-to-r from-model-purple to-model-pink hover:from-model-pink hover:to-model-purple transition-all duration-500 text-white font-semibold shadow-lg shadow-model-purple/30 hover:shadow-model-pink/40 group relative overflow-hidden"
       >
         <a 
           href={ctaLink}
           target="_blank"
           rel="noopener noreferrer"
+          className="relative z-10 flex items-center justify-center py-3"
         >
-          {ctaText}
+          <span className="inline-block transform group-hover:scale-110 transition-transform duration-300">{ctaText}</span>
+          <Sparkles className="ml-2 h-4 w-4 opacity-70 group-hover:opacity-100 animate-pulse" />
         </a>
       </Button>
     </div>
